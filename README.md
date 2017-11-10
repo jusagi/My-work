@@ -13,5 +13,5 @@
     - Uploaded "2. Design & Inspiration (Wireframe to Photoshop).psd"
 
   - 9/11/2017 : "Convert a PSD Template to Bootstrap Video Series" 
-    - *Finished* "Wireframe to Photoshop" 
+    - *Finished* "Wireframe to Photoshop" 
     - Uploaded "2. Design & Inspiration (Wireframe to Photoshop).psd" (done)
