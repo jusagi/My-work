@@ -19,3 +19,7 @@
   - 10/11/2017 : "Convert a PSD Template to Bootstrap Video Series"
     - *Finished* "Applying Styles" 
     - Uploaded "2. Design & Inspiration (Applying Styles).psd" (done)
+
+  - 11/11/2017 : "Convert a PSD Template to Bootstrap Video Series"
+    - *Working* "The HTML Markup" 
+    - Uploaded "2. PSD to HTML to Bootstrap (The HTML Markup).psd"
