@@ -1,0 +1,26 @@
+body{
+	background: #cccccc;
+}
+#main-wrapper{
+	width: 960px;
+	margin: 0 auto;
+}
+header{
+	height: 150px;
+	background: #333333;
+}
+#main-content{
+	background: #ffffff;
+	float: left;
+	width: 660px;
+}
+aside{
+	width: 300px;
+	background: #e5e5e5;
+	float: right;
+}
+footer{
+	clear: both;
+	background: #333333;
+	height: 50px;
+}
