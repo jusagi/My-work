@@ -53,7 +53,7 @@ a:hover, a:focus{
 .hero-unit{
 	padding: 0;
 	background: #222 url(img/hero_unit.jpg) no-repeat 50% top;
-	height: 626px;
+	background-size: cover;
 	border-radius: 0;
 	margin-bottom: 0;
 }
@@ -75,6 +75,7 @@ a:hover, a:focus{
 	width: 127px;
 	background: url(img/brand.png) no-repeat;
 	margin: 0;
+	border: none;
 }
 
 .navbar .brand:hover{
@@ -83,6 +84,7 @@ a:hover, a:focus{
 .navbar .nav{
 	padding: 0;
 	margin: 0;
+	float: right;
 }
 
 .navbar .nav > li > a{
@@ -96,6 +98,7 @@ a:hover, a:focus{
 .navbar .nav > li > a:focus, .navbar .nav > li > a:hover{
 	color: rgba(255,255,255,0.7);
 	border-bottom: none;
+	background: none;
 }
 
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus{
@@ -107,7 +110,57 @@ a:hover, a:focus{
 	color: #fff;
 }
 
+.navbar .btn-navbar{
+	background: #fff;
+	border: none;
+}
+
+.navbar .btn-navbar .icon-bar{
+	background: #000;
+	box-shadow: none:
+}
+
 /** end **/
+
+/** banner **/
+
+.carousel-control{
+	border-radius: 0;
+	border: none;
+	font-size: 32px;
+	width: 30px;
+	height: 60px;
+	line-height: 55px;
+	top: 45%;
+	background: #000;
+	opacity: 0.7;
+}
+
+.carousel-control:hover{
+	border: none;
+}
+
+.carousel-control.left{
+	left: 0;
+	-webkit-border-top-right-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-bottomright: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.carousel-control.right{
+	right: 0;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+/** end banner **/
 
 /** hero-unit-inner **/
 
@@ -159,6 +212,7 @@ a:hover, a:focus{
 	padding: 60px 0;
 }
 .h-line{
+	
 	max-height: 5px;
 	background: url(img/h-line.jpg) repeat-x;
 	-webkit-border-radius: 3px;
@@ -282,13 +336,18 @@ a:hover, a:focus{
 
 /** footer **/
 
+footer{
+	padding: 60px 0;
+}
+
 .table{
-	margin: 0 auto;
 	display: table;
+	margin: 0 auto;
 }
 
 .footer-links{
 	list-style: none;
+	display: inline-block;
 }
 
 .footer-links li{
@@ -327,9 +386,38 @@ a:hover, a:focus{
 	width: 16px;
 	height: 16px;
 	display: inline-block;
-	background: url(img/social-sprites.png) no-repeat;
-	background: left;
+	background: transparent url(img/social_sprite.png) no-repeat;
+	background: left top;
 }
 .social-sprite.facebook{
 	background-position: -16px top;
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+	.navbar .nav {
+		float: none; margin-bottom: 20px;
+	}
+	body{
+		padding: 0;
+	}
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	.navbar .nav {
+		float: none; margin-bottom: 20px;
+	}
+	body{
+		padding: 0;
+	}
+	.hero-unit-inner{
+		padding: 0 40px;
+	}
+	.plan, .design, .develop, .launch, .testimonials, .blog, .tweets, .p-item{
+		margin-bottom: 40px; padding: 0 40px;
+	}
+	#partners img{
+		margin-bottom: 40px;
+	}
 }

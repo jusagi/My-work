@@ -28,3 +28,9 @@
     - *Finished* "The HTML Markup"
     - *Working* "Applying the CSS Styles"
     - Updated "2. PSD to HTML to Bootstrap (Applying the CSS Styles).psd"
+
+  - 13/11/2017 : "Convert a PSD Template to Bootstrap Video Series"
+    - *Finished* "The HTML Markup"
+    - Updated "2. PSD to HTML to Bootstrap (Applying the CSS Styles).psd" (done)
+    - *Working* "Code a Responsive Website Using HTML5 and CSS3"
+    - Uploaded "3. Code a Responsive Website Using HTML5 and CSS3"
