@@ -8,7 +8,7 @@ body{
 	}
 
 a{
-	outline: 0;
+	text-decoration: none;
 }
 
 a:link, a:visited{
@@ -62,7 +62,7 @@ a:hover, a:active{
 	text-shadow: none;
 }
 	
-.mainHeader nav li a {
+.mainHeader nav ul li a {
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -102,3 +102,120 @@ a:hover, a:active{
 	margin-top: 2%;
 }
 
+.post-info {
+	font-style: italic;
+	color: #999;
+	font-size: 90%;
+}
+
+.top-sidebar {
+	width: 21%;
+	float: left;
+	background-color: #FFF;	
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin: 2% 0 2% 3%;
+	padding: 2% 3%;
+}
+
+.middle-sidebar {
+	width: 21%;
+	float: left;
+	background-color: #FFF;	
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin-left: 3%;
+	margin-bottom: 2%;
+	padding: 2% 3%;
+}
+
+.bottom-sidebar {
+	width: 21%;
+	float: left;
+	background-color: #FFF;	
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin-left: 3%;
+	margin-bottom: 2%;
+	padding: 2% 3%;
+}
+
+.mainFooter {
+	width: 100%;
+	height: 40px;
+	float: left;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;	
+	background-color: #666;
+	margin: 2% 0;
+}
+
+.mainFooter p {
+	width: 92%;
+	margin: 10px auto;
+	color: #FFF;
+}
+
+@media only screen and (min-width : 150px) and (max-width : 600px){
+	.body{
+		width: 90%;
+		font-size: 95%;
+	}
+	.mainHeader img {
+		width: 100%;
+	}
+	
+	.mainHeader nav{
+		height: 160px;
+	}
+		
+	.mainHeader nav ul {
+		padding-left: 0;
+	}
+
+	.mainHeader nav ul li {
+		width: 100%;
+		text-align: center;
+	}
+		
+	.mainHeader nav a:link, .mainHeader nav a:visited {
+		padding: 10px 25px;
+		height: 20px;
+		display: block;
+	}
+
+	.content {
+		width: 100%;
+		float: left;
+		margin-top: 2%;
+	}
+	
+	.post-info {
+		display: none;
+	}
+	
+	.topcontent {
+		background-color: #FFF;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;	
+		padding: 3% 5%;	
+		margin-top: 2%;
+		margin-bottom: 4%;
+	}
+
+	.bottomcontent {
+		margin-top: 3%;
+	}
+	
+	.top-sidebar, .middle-sidebar, .bottom-sidebar {
+		width: 94%;
+		margin: 2% 0 2% 0;
+		padding: 2% 3%;
+	}
+	
+}
