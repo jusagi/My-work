@@ -22,15 +22,21 @@
 
   - 11/11/2017 : "Convert a PSD Template to Bootstrap Video Series"
     - *Working* "The HTML Markup" 
-    - Uploaded "2. PSD to HTML to Bootstrap (The HTML Markup).psd"
+    - Uploaded "2. PSD to HTML to Bootstrap (The HTML Markup)"
 
   - 12/11/2017 : "Convert a PSD Template to Bootstrap Video Series"
     - *Finished* "The HTML Markup"
     - *Working* "Applying the CSS Styles"
-    - Updated "2. PSD to HTML to Bootstrap (Applying the CSS Styles).psd"
+    - Updated "2. PSD to HTML to Bootstrap (Applying the CSS Styles)"
 
   - 13/11/2017 : "Convert a PSD Template to Bootstrap Video Series"
     - *Finished* "The HTML Markup"
-    - Updated "2. PSD to HTML to Bootstrap (Applying the CSS Styles).psd" (done)
+    - Updated "2. PSD to HTML to Bootstrap (Applying the CSS Styles)" (done)
     - *Working* "Code a Responsive Website Using HTML5 and CSS3"
     - Uploaded "3. Code a Responsive Website Using HTML5 and CSS3"
+
+  - 14/11/2017 : "Code a Responsive Website Using HTML5 and CSS3"
+    - *Finished* "Code a Responsive Website Using HTML5 and CSS3"
+    - Uploaded "3. Code a Responsive Website Using HTML5 and CSS3" (done)
+    - *Working* "Design an Agency Landing Page in Photoshop"
+    - Uploaded "4. Design an Agency Landing Page in Photoshop.psd"
