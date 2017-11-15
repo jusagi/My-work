@@ -40,3 +40,9 @@
     - Uploaded "3. Code a Responsive Website Using HTML5 and CSS3" (done)
     - *Working* "Design an Agency Landing Page in Photoshop"
     - Uploaded "4. Design an Agency Landing Page in Photoshop.psd"
+
+  - 15/11/2017 : "Design an Agency Landing Page in Photoshop" & "Convert the Agency PSD into HTML" & "Make the Agency HTML Responsive"
+    - *Finished* "Design an Agency Landing Page in Photoshop"
+    - Updated "4. Code a Responsive Website Using HTML5 and CSS3" (done)
+    - *Finished* "Convert the Agency PSD into HTML & Make the Agency HTML Responsive"
+    - Uploaded "5-6. GreenHill (Convert the Agency PSD into HTML & Make the Agency HTML Responsive)"
