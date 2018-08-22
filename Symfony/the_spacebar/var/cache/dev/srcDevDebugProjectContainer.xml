@@ -56,7 +56,7 @@
     <parameter key="kernel.container_class">srcDevDebugProjectContainer</parameter>
     <parameter key="container.autowiring.strict_mode">true</parameter>
     <parameter key="container.dumper.inline_class_loader">true</parameter>
-    <parameter key="cache_adapter">cache.adapter.apcu</parameter>
+    <parameter key="cache_adapter">cache.adapter.filesystem</parameter>
     <parameter key="fragment.renderer.hinclude.global_template"></parameter>
     <parameter key="fragment.path">/_fragment</parameter>
     <parameter key="kernel.secret">%env(APP_SECRET)%</parameter>
@@ -900,14 +900,6 @@
       </call>
       <call method="addListener">
         <argument>kernel.request</argument>
-        <argument type="collection">
-          <argument type="service" id="debug.debug_handlers_listener"/>
-          <argument>configure</argument>
-        </argument>
-        <argument>2048</argument>
-      </call>
-      <call method="addListener">
-        <argument>console.command</argument>
         <argument type="collection">
           <argument type="service" id="debug.debug_handlers_listener"/>
           <argument>configure</argument>
@@ -2097,10 +2089,10 @@
         <argument key="web_server.command.server_stop" type="service" id="web_server.command.server_stop"/>
       </argument>
     </service>
-    <service id="cache.app.recorder_inner" class="Symfony\Component\Cache\Adapter\ApcuAdapter" public="false">
+    <service id="cache.app.recorder_inner" class="Symfony\Component\Cache\Adapter\FilesystemAdapter" public="false">
       <argument>+P+0Y8xo9q</argument>
       <argument>0</argument>
-      <argument>%container.build_id%</argument>
+      <argument>D:\GitHub\My-work\Symfony\the_spacebar\var\cache\dev/pools</argument>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       </call>
