@@ -27,7 +27,7 @@ class MarkdownHelper
         else {
             $this->logger->info('They did not say it!');
         }
-
+            dump($this->cache);die;
         $item = $this->cache->getItem('markdown_' . md5($source));
         if (!$item->isHit()) {
             $item->set($this->markdown->transform($source));
