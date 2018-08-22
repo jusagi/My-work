@@ -187,6 +187,7 @@
     <service id="App\Controller\ArticleController" class="App\Controller\ArticleController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <tag name="container.service_subscriber"/>
+      <argument>true</argument>
       <call method="setContainer">
         <argument type="service" id=".service_locator.ychIlgF.App\Controller\ArticleController"/>
       </call>
@@ -195,6 +196,7 @@
       <argument type="service" id="cache.app"/>
       <argument type="service" id="markdown.parser.light"/>
       <argument type="service" id="monolog.logger.markdown"/>
+      <argument>true</argument>
     </service>
     <service id="controller_name_converter" class="Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser" public="false">
       <tag name="monolog.logger" channel="request"/>
@@ -1789,9 +1791,16 @@
     <service id=".instanceof.Symfony\Component\DependencyInjection\ServiceSubscriberInterface.0.App\Controller\ArticleController" class="App\Controller\ArticleController" public="false" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\ArticleController" class="App\Controller\ArticleController" public="false" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\ArticleController" class="App\Controller\ArticleController" public="false" autowire="true" autoconfigure="true" abstract="true"/>
-    <service id=".service_locator.meZ.3VY" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".value.C_5.39h" class="mixed">
+      <argument type="collection">
+        <argument>true</argument>
+      </argument>
+      <factory function="current"/>
+    </service>
+    <service id=".service_locator.MT1r.sI" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
+        <argument key="isDebug" type="service" id=".value.C_5.39h"/>
         <argument key="markdownHelper" type="service" id="App\Service\MarkdownHelper"/>
       </argument>
     </service>
@@ -1801,12 +1810,12 @@
         <argument key="logger" type="service" id="monolog.logger"/>
       </argument>
     </service>
-    <service id=".service_locator.nOrfdl_" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.Y48h4NW" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
-        <argument key="App\Controller\ArticleController::show" type="service" id=".service_locator.meZ.3VY"/>
+        <argument key="App\Controller\ArticleController::show" type="service" id=".service_locator.MT1r.sI"/>
         <argument key="App\Controller\ArticleController::toggleArticleHeart" type="service" id=".service_locator.dOJ.0GD"/>
-        <argument key="App\Controller\ArticleController:show" type="service" id=".service_locator.meZ.3VY"/>
+        <argument key="App\Controller\ArticleController:show" type="service" id=".service_locator.MT1r.sI"/>
         <argument key="App\Controller\ArticleController:toggleArticleHeart" type="service" id=".service_locator.dOJ.0GD"/>
       </argument>
     </service>
@@ -1973,7 +1982,7 @@
     <service id="debug.argument_resolver.request.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\RequestValueResolver" public="false"/>
     <service id="debug.argument_resolver.session.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\SessionValueResolver" public="false"/>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver" public="false">
-      <argument type="service" id=".service_locator.nOrfdl_"/>
+      <argument type="service" id=".service_locator.Y48h4NW"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver" public="false"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver" public="false"/>
@@ -2175,7 +2184,7 @@
     <service id="markdown.parser" alias="markdown.parser.light" public="true"/>
     <service id="Knp\Bundle\MarkdownBundle\MarkdownParserInterface" alias="markdown.parser.light"/>
     <service id="Michelf\MarkdownInterface" alias="markdown.parser.light"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.nOrfdl_"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.Y48h4NW"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem" public="false"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id=".service_locator.AoifO_3" alias=".2_ServiceLocator~_7zcZ0I" public="false"/>

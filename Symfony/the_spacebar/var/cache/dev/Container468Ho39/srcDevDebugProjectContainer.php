@@ -1,6 +1,6 @@
 <?php
 
-namespace Container1X8SpYC;
+namespace Container468Ho39;
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -113,9 +113,10 @@ class srcDevDebugProjectContainer extends Container
             include_once $this->targetDirs[3].'\\vendor\\psr\\log\\Psr\\Log\\LoggerAwareTrait.php';
             include_once $this->targetDirs[3].'\\vendor\\symfony\\cache\\Traits\\AbstractTrait.php';
             include_once $this->targetDirs[3].'\\vendor\\symfony\\cache\\Adapter\\AbstractAdapter.php';
-            include_once $this->targetDirs[3].'\\vendor\\symfony\\cache\\Traits\\ApcuTrait.php';
-            include_once $this->targetDirs[3].'\\vendor\\symfony\\cache\\Adapter\\ApcuAdapter.php';
             include_once $this->targetDirs[3].'\\vendor\\symfony\\cache\\PruneableInterface.php';
+            include_once $this->targetDirs[3].'\\vendor\\symfony\\cache\\Traits\\FilesystemCommonTrait.php';
+            include_once $this->targetDirs[3].'\\vendor\\symfony\\cache\\Traits\\FilesystemTrait.php';
+            include_once $this->targetDirs[3].'\\vendor\\symfony\\cache\\Adapter\\FilesystemAdapter.php';
             include_once $this->targetDirs[3].'\\vendor\\symfony\\cache\\Adapter\\TraceableAdapter.php';
             include_once $this->targetDirs[3].'\\vendor\\symfony\\dependency-injection\\ServiceLocator.php';
             include_once $this->targetDirs[3].'\\vendor\\symfony\\http-kernel\\EventListener\\AbstractSessionListener.php';
@@ -284,7 +285,7 @@ class srcDevDebugProjectContainer extends Container
      */
     protected function getCache_AppService()
     {
-        $a = new \Symfony\Component\Cache\Adapter\ApcuAdapter('+P+0Y8xo9q', 0, $this->getParameter('container.build_id'));
+        $a = new \Symfony\Component\Cache\Adapter\FilesystemAdapter('+P+0Y8xo9q', 0, ($this->targetDirs[0].'/pools'));
         $a->setLogger(($this->privates['monolog.logger.cache'] ?? $this->getMonolog_Logger_CacheService()));
 
         return $this->services['cache.app'] = new \Symfony\Component\Cache\Adapter\TraceableAdapter($a);
@@ -375,9 +376,6 @@ class srcDevDebugProjectContainer extends Container
             return ($this->privates['data_collector.request'] ?? $this->privates['data_collector.request'] = new \Symfony\Component\HttpKernel\DataCollector\RequestDataCollector());
         }, 1 => 'onKernelResponse'), 0);
         $instance->addListener('kernel.request', array(0 => function () {
-            return ($this->privates['debug.debug_handlers_listener'] ?? $this->getDebug_DebugHandlersListenerService());
-        }, 1 => 'configure'), 2048);
-        $instance->addListener('console.command', array(0 => function () {
             return ($this->privates['debug.debug_handlers_listener'] ?? $this->getDebug_DebugHandlersListenerService());
         }, 1 => 'configure'), 2048);
         $instance->addListener('kernel.request', array(0 => function () {
@@ -1063,7 +1061,7 @@ class srcDevDebugProjectContainer extends Container
             'kernel.container_class' => 'srcDevDebugProjectContainer',
             'container.autowiring.strict_mode' => true,
             'container.dumper.inline_class_loader' => true,
-            'cache_adapter' => 'cache.adapter.apcu',
+            'cache_adapter' => 'cache.adapter.filesystem',
             'fragment.renderer.hinclude.global_template' => '',
             'fragment.path' => '/_fragment',
             'kernel.http_method_override' => true,

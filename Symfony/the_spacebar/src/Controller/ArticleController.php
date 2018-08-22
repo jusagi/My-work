@@ -20,10 +20,15 @@ class ArticleController extends AbstractController
         return $this->render('article/homepage.html.twig');
     }
 
+    public function __construct(bool $isDebug)
+    {
+        dump($isDebug);die;
+    }
+
     /**
      * @Route("/news/{slug}", name="article_show")
      */
-    public function show($slug, MarkdownHelper $markdownHelper)
+    public function show($slug, MarkdownHelper $markdownHelper, $isDebug)
     {
         $comments = [
             'Something funny',
