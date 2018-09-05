@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
   <parameters>
-    <parameter key="kernel.root_dir">D:\GitHub\My-work\Symfony\the_spacebar\src</parameter>
-    <parameter key="kernel.project_dir">D:\GitHub\My-work\Symfony\the_spacebar</parameter>
+    <parameter key="kernel.root_dir">D:\the_spacebar\src</parameter>
+    <parameter key="kernel.project_dir">D:\the_spacebar</parameter>
     <parameter key="kernel.environment">dev</parameter>
     <parameter key="kernel.debug">true</parameter>
     <parameter key="kernel.name">src</parameter>
-    <parameter key="kernel.cache_dir">D:\GitHub\My-work\Symfony\the_spacebar\var\cache\dev</parameter>
-    <parameter key="kernel.logs_dir">D:\GitHub\My-work\Symfony\the_spacebar\var\log</parameter>
+    <parameter key="kernel.cache_dir">D:\the_spacebar\var\cache\dev</parameter>
+    <parameter key="kernel.logs_dir">D:\the_spacebar\var\log</parameter>
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
       <parameter key="WebServerBundle">Symfony\Bundle\WebServerBundle\WebServerBundle</parameter>
@@ -17,39 +17,49 @@
       <parameter key="MonologBundle">Symfony\Bundle\MonologBundle\MonologBundle</parameter>
       <parameter key="DebugBundle">Symfony\Bundle\DebugBundle\DebugBundle</parameter>
       <parameter key="KnpMarkdownBundle">Knp\Bundle\MarkdownBundle\KnpMarkdownBundle</parameter>
+      <parameter key="HttplugBundle">Http\HttplugBundle\HttplugBundle</parameter>
+      <parameter key="NexySlackBundle">Nexy\SlackBundle\NexySlackBundle</parameter>
     </parameter>
     <parameter key="kernel.bundles_metadata" type="collection">
       <parameter key="FrameworkBundle" type="collection">
-        <parameter key="path">D:\GitHub\My-work\Symfony\the_spacebar\vendor\symfony\framework-bundle</parameter>
+        <parameter key="path">D:\the_spacebar\vendor\symfony\framework-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\FrameworkBundle</parameter>
       </parameter>
       <parameter key="WebServerBundle" type="collection">
-        <parameter key="path">D:\GitHub\My-work\Symfony\the_spacebar\vendor\symfony\web-server-bundle</parameter>
+        <parameter key="path">D:\the_spacebar\vendor\symfony\web-server-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\WebServerBundle</parameter>
       </parameter>
       <parameter key="SensioFrameworkExtraBundle" type="collection">
-        <parameter key="path">D:\GitHub\My-work\Symfony\the_spacebar\vendor\sensio\framework-extra-bundle</parameter>
+        <parameter key="path">D:\the_spacebar\vendor\sensio\framework-extra-bundle</parameter>
         <parameter key="namespace">Sensio\Bundle\FrameworkExtraBundle</parameter>
       </parameter>
       <parameter key="TwigBundle" type="collection">
-        <parameter key="path">D:\GitHub\My-work\Symfony\the_spacebar\vendor\symfony\twig-bundle</parameter>
+        <parameter key="path">D:\the_spacebar\vendor\symfony\twig-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\TwigBundle</parameter>
       </parameter>
       <parameter key="WebProfilerBundle" type="collection">
-        <parameter key="path">D:\GitHub\My-work\Symfony\the_spacebar\vendor\symfony\web-profiler-bundle</parameter>
+        <parameter key="path">D:\the_spacebar\vendor\symfony\web-profiler-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\WebProfilerBundle</parameter>
       </parameter>
       <parameter key="MonologBundle" type="collection">
-        <parameter key="path">D:\GitHub\My-work\Symfony\the_spacebar\vendor\symfony\monolog-bundle</parameter>
+        <parameter key="path">D:\the_spacebar\vendor\symfony\monolog-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\MonologBundle</parameter>
       </parameter>
       <parameter key="DebugBundle" type="collection">
-        <parameter key="path">D:\GitHub\My-work\Symfony\the_spacebar\vendor\symfony\debug-bundle</parameter>
+        <parameter key="path">D:\the_spacebar\vendor\symfony\debug-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\DebugBundle</parameter>
       </parameter>
       <parameter key="KnpMarkdownBundle" type="collection">
-        <parameter key="path">D:\GitHub\My-work\Symfony\the_spacebar\vendor\knplabs\knp-markdown-bundle</parameter>
+        <parameter key="path">D:\the_spacebar\vendor\knplabs\knp-markdown-bundle</parameter>
         <parameter key="namespace">Knp\Bundle\MarkdownBundle</parameter>
+      </parameter>
+      <parameter key="HttplugBundle" type="collection">
+        <parameter key="path">D:\the_spacebar\vendor\php-http\httplug-bundle</parameter>
+        <parameter key="namespace">Http\HttplugBundle</parameter>
+      </parameter>
+      <parameter key="NexySlackBundle" type="collection">
+        <parameter key="path">D:\the_spacebar\vendor\nexylan\slack-bundle\src</parameter>
+        <parameter key="namespace">Nexy\SlackBundle</parameter>
       </parameter>
     </parameter>
     <parameter key="kernel.charset">UTF-8</parameter>
@@ -71,15 +81,15 @@
       <parameter key="cookie_httponly">true</parameter>
       <parameter key="gc_probability">1</parameter>
     </parameter>
-    <parameter key="session.save_path">D:\GitHub\My-work\Symfony\the_spacebar\var\cache\dev/sessions</parameter>
+    <parameter key="session.save_path">D:\the_spacebar\var\cache\dev/sessions</parameter>
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="asset.request_context.base_path"></parameter>
     <parameter key="asset.request_context.secure">false</parameter>
     <parameter key="profiler_listener.only_exceptions">false</parameter>
     <parameter key="profiler_listener.only_master_requests">false</parameter>
-    <parameter key="profiler.storage.dsn">file:D:\GitHub\My-work\Symfony\the_spacebar\var\cache\dev/profiler</parameter>
+    <parameter key="profiler.storage.dsn">file:D:\the_spacebar\var\cache\dev/profiler</parameter>
     <parameter key="debug.error_handler.throw_at">-1</parameter>
-    <parameter key="debug.container.dump">D:\GitHub\My-work\Symfony\the_spacebar\var\cache\dev/srcDevDebugProjectContainer.xml</parameter>
+    <parameter key="debug.container.dump">D:\the_spacebar\var\cache\dev/srcDevDebugProjectContainer.xml</parameter>
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
@@ -91,7 +101,7 @@
     <parameter key="twig.form.resources" type="collection">
       <parameter>form_div_layout.html.twig</parameter>
     </parameter>
-    <parameter key="twig.default_path">D:\GitHub\My-work\Symfony\the_spacebar/templates</parameter>
+    <parameter key="twig.default_path">D:\the_spacebar/templates</parameter>
     <parameter key="web_profiler.debug_toolbar.intercept_redirects">false</parameter>
     <parameter key="web_profiler.debug_toolbar.mode">2</parameter>
     <parameter key="monolog.use_microseconds">true</parameter>
@@ -119,6 +129,10 @@
       </parameter>
     </parameter>
     <parameter key="env(VAR_DUMPER_SERVER)">127.0.0.1:9912</parameter>
+    <parameter key="nexy_slack.endpoint">%env(string:SLACK_WEBHOOK_ENDPOINT)%</parameter>
+    <parameter key="nexy_slack.config" type="collection">
+      <parameter key="markdown_in_attachments" type="collection"/>
+    </parameter>
     <parameter key="data_collector.templates" type="collection">
       <parameter key="data_collector.request" type="collection">
         <parameter>request</parameter>
@@ -164,6 +178,10 @@
         <parameter>dump</parameter>
         <parameter>@Debug/Profiler/dump.html.twig</parameter>
       </parameter>
+      <parameter key="httplug.collector.collector" type="collection">
+        <parameter>httplug</parameter>
+        <parameter>@Httplug/webprofiler.html.twig</parameter>
+      </parameter>
       <parameter key="data_collector.config" type="collection">
         <parameter>config</parameter>
         <parameter>@WebProfiler/Collector/config.html.twig</parameter>
@@ -182,12 +200,13 @@
       </call>
     </service>
     <service id="EasyCorp\EasyLog\EasyLogHandler" class="EasyCorp\EasyLog\EasyLogHandler" public="false">
-      <argument>D:\GitHub\My-work\Symfony\the_spacebar\var\log/dev.log</argument>
+      <argument>D:\the_spacebar\var\log/dev.log</argument>
     </service>
     <service id="App\Controller\ArticleController" class="App\Controller\ArticleController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <tag name="container.service_subscriber"/>
       <argument>true</argument>
+      <argument type="service" id="nexy_slack.client"/>
       <call method="setContainer">
         <argument type="service" id=".service_locator.ychIlgF.App\Controller\ArticleController"/>
       </call>
@@ -197,6 +216,12 @@
       <argument type="service" id="markdown.parser.light"/>
       <argument type="service" id="monolog.logger.markdown"/>
       <argument>true</argument>
+    </service>
+    <service id="App\Service\SlackClient" class="App\Service\SlackClient" public="false" autowire="true" autoconfigure="true">
+      <argument type="service" id="nexy_slack.client"/>
+      <call method="setLogger">
+        <argument type="service" id="monolog.logger"/>
+      </call>
     </service>
     <service id="controller_name_converter" class="Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser" public="false">
       <tag name="monolog.logger" channel="request"/>
@@ -250,9 +275,9 @@
     <service id="filesystem" class="Symfony\Component\Filesystem\Filesystem" public="true"/>
     <service id="file_locator" class="Symfony\Component\HttpKernel\Config\FileLocator" public="false">
       <argument type="service" id="kernel"/>
-      <argument>D:\GitHub\My-work\Symfony\the_spacebar\src/Resources</argument>
+      <argument>D:\the_spacebar\src/Resources</argument>
       <argument type="collection">
-        <argument>D:\GitHub\My-work\Symfony\the_spacebar\src</argument>
+        <argument>D:\the_spacebar\src</argument>
       </argument>
     </service>
     <service id="uri_signer" class="Symfony\Component\HttpKernel\UriSigner" public="false">
@@ -425,7 +450,7 @@
       <argument></argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>D:\GitHub\My-work\Symfony\the_spacebar\var\cache\dev/pools</argument>
+      <argument>D:\the_spacebar\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -454,7 +479,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>D:\GitHub\My-work\Symfony\the_spacebar\var\cache\dev/pools</argument>
+      <argument>D:\the_spacebar\var\cache\dev/pools</argument>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       </call>
@@ -519,15 +544,15 @@
         <argument key="cache.annotations" type="service" id="cache.annotations" on-invalid="ignore_uninitialized"/>
       </argument>
     </service>
-    <service id=".2_ServiceLocator~_7zcZ0I" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".2_ServiceLocator~lrcyybC" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="initialized_session" type="service" id="session" on-invalid="ignore_uninitialized"/>
         <argument key="session" type="service" id="session" on-invalid="ignore"/>
       </argument>
     </service>
-    <service id=".1_NativeFileSessionHandler~_7zcZ0I" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler" public="false">
-      <argument>D:\GitHub\My-work\Symfony\the_spacebar\var\cache\dev/sessions</argument>
+    <service id=".1_NativeFileSessionHandler~lrcyybC" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler" public="false">
+      <argument>D:\the_spacebar\var\cache\dev/sessions</argument>
     </service>
     <service id="session" class="Symfony\Component\HttpFoundation\Session\Session" public="true">
       <argument type="service" id="session.storage.native"/>
@@ -550,19 +575,19 @@
     <service id="session.flash_bag" class="Symfony\Component\HttpFoundation\Session\Flash\FlashBag" public="false"/>
     <service id="session.attribute_bag" class="Symfony\Component\HttpFoundation\Session\Attribute\AttributeBag" public="false"/>
     <service id="session.storage.mock_file" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorage" public="false">
-      <argument>D:\GitHub\My-work\Symfony\the_spacebar\var\cache\dev/sessions</argument>
+      <argument>D:\the_spacebar\var\cache\dev/sessions</argument>
       <argument>MOCKSESSID</argument>
       <argument type="service" id="session.storage.metadata_bag"/>
     </service>
     <service id="session.handler.native_file" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\StrictSessionHandler" public="false">
-      <argument type="service" id=".1_NativeFileSessionHandler~_7zcZ0I"/>
+      <argument type="service" id=".1_NativeFileSessionHandler~lrcyybC"/>
     </service>
     <service id="session_listener" class="Symfony\Component\HttpKernel\EventListener\SessionListener" public="false">
       <tag name="kernel.event_subscriber"/>
       <tag name="container.hot_path"/>
       <tag name="container.hot_path"/>
       <tag name="container.hot_path"/>
-      <argument type="service" id=".2_ServiceLocator~_7zcZ0I"/>
+      <argument type="service" id=".2_ServiceLocator~lrcyybC"/>
     </service>
     <service id="session.save_listener" class="Symfony\Component\HttpKernel\EventListener\SaveSessionListener" public="false">
       <deprecated>The "%service_id%" service is deprecated since Symfony 4.1. Use the "session_listener" service instead.</deprecated>
@@ -642,11 +667,14 @@
         <argument type="service" id="data_collector.dump"/>
       </call>
       <call method="add">
+        <argument type="service" id="httplug.collector.collector"/>
+      </call>
+      <call method="add">
         <argument type="service" id="data_collector.config"/>
       </call>
     </service>
     <service id="profiler.storage" class="Symfony\Component\HttpKernel\Profiler\FileProfilerStorage" public="false">
-      <argument>file:D:\GitHub\My-work\Symfony\the_spacebar\var\cache\dev/profiler</argument>
+      <argument>file:D:\the_spacebar\var\cache\dev/profiler</argument>
     </service>
     <service id="profiler_listener" class="Symfony\Component\HttpKernel\EventListener\ProfilerListener" public="false">
       <tag name="kernel.event_subscriber"/>
@@ -683,7 +711,7 @@
       <tag name="data_collector" template="@WebProfiler/Collector/logger.html.twig" id="logger" priority="300"/>
       <tag name="monolog.logger" channel="profiler"/>
       <argument type="service" id="monolog.logger.profiler" on-invalid="ignore"/>
-      <argument>D:\GitHub\My-work\Symfony\the_spacebar\var\cache\dev/srcDevDebugProjectContainer</argument>
+      <argument>D:\the_spacebar\var\cache\dev/srcDevDebugProjectContainer</argument>
       <argument type="service" id="request_stack" on-invalid="ignore"/>
     </service>
     <service id="data_collector.time" class="Symfony\Component\HttpKernel\DataCollector\TimeDataCollector" public="false">
@@ -751,7 +779,7 @@
     <service id="debug.file_link_formatter" class="Symfony\Component\HttpKernel\Debug\FileLinkFormatter" public="false">
       <argument>null</argument>
       <argument type="service" id="request_stack" on-invalid="ignore"/>
-      <argument>D:\GitHub\My-work\Symfony\the_spacebar</argument>
+      <argument>D:\the_spacebar</argument>
       <argument type="service" id="debug.file_link_formatter.url_format"/>
     </service>
     <service id="debug.stopwatch" class="Symfony\Component\Stopwatch\Stopwatch">
@@ -1036,6 +1064,38 @@
         </argument>
         <argument>1024</argument>
       </call>
+      <call method="addListener">
+        <argument>kernel.request</argument>
+        <argument type="collection">
+          <argument type="service" id="httplug.strategy"/>
+          <argument>onEvent</argument>
+        </argument>
+        <argument>1024</argument>
+      </call>
+      <call method="addListener">
+        <argument>console.command</argument>
+        <argument type="collection">
+          <argument type="service" id="httplug.strategy"/>
+          <argument>onEvent</argument>
+        </argument>
+        <argument>1024</argument>
+      </call>
+      <call method="addListener">
+        <argument>kernel.request</argument>
+        <argument type="collection">
+          <argument type="service" id="Http\HttplugBundle\Collector\PluginClientFactoryListener"/>
+          <argument>onEvent</argument>
+        </argument>
+        <argument>1024</argument>
+      </call>
+      <call method="addListener">
+        <argument>console.command</argument>
+        <argument type="collection">
+          <argument type="service" id="Http\HttplugBundle\Collector\PluginClientFactoryListener"/>
+          <argument>onEvent</argument>
+        </argument>
+        <argument>1024</argument>
+      </call>
     </service>
     <service id="debug.controller_resolver" class="Symfony\Component\HttpKernel\Controller\TraceableControllerResolver" public="false">
       <tag name="monolog.logger" channel="request"/>
@@ -1112,7 +1172,7 @@
       <argument type="service" id=".service_locator.oNnsU_h.router.default"/>
       <argument>kernel::loadRoutes</argument>
       <argument type="collection">
-        <argument key="cache_dir">D:\GitHub\My-work\Symfony\the_spacebar\var\cache\dev</argument>
+        <argument key="cache_dir">D:\the_spacebar\var\cache\dev</argument>
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
         <argument key="generator_base_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
@@ -1154,7 +1214,7 @@
       <argument type="service" id="request_stack"/>
       <argument type="service" id="router.request_context" on-invalid="ignore"/>
       <argument type="service" id="monolog.logger.request" on-invalid="ignore"/>
-      <argument>D:\GitHub\My-work\Symfony\the_spacebar</argument>
+      <argument>D:\the_spacebar</argument>
       <argument>true</argument>
     </service>
     <service id="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" class="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" public="true">
@@ -1180,12 +1240,12 @@
       <argument type="service" id="file_locator"/>
       <argument type="service" id="routing.loader.annotation"/>
     </service>
-    <service id=".2_PhpArrayAdapter~XkdELAP" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
-      <argument>D:\GitHub\My-work\Symfony\the_spacebar\var\cache\dev/annotations.php</argument>
+    <service id=".2_PhpArrayAdapter~GTpEjhK" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
+      <argument>D:\the_spacebar\var\cache\dev/annotations.php</argument>
       <argument type="service" id="cache.annotations"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
-    <service id=".1_ArrayCache~XkdELAP" class="Doctrine\Common\Cache\ArrayCache" public="false"/>
+    <service id=".1_ArrayCache~GTpEjhK" class="Doctrine\Common\Cache\ArrayCache" public="false"/>
     <service id="annotations.reader" class="Doctrine\Common\Annotations\AnnotationReader" public="false">
       <call method="addGlobalIgnoredName">
         <argument>required</argument>
@@ -1200,7 +1260,7 @@
     <service id="annotations.cached_reader" class="Doctrine\Common\Annotations\CachedReader" public="false">
       <tag name="annotations.cached_reader"/>
       <argument type="service" id="annotations.reader"/>
-      <argument type="service" id=".1_ArrayCache~XkdELAP"/>
+      <argument type="service" id=".1_ArrayCache~GTpEjhK"/>
       <argument>true</argument>
       <property name="cacheProviderBackup" type="service" id="annotations.cache"/>
     </service>
@@ -1210,17 +1270,17 @@
     <service id="annotations.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\AnnotationsCacheWarmer" public="false">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="annotations.reader"/>
-      <argument>D:\GitHub\My-work\Symfony\the_spacebar\var\cache\dev/annotations.php</argument>
+      <argument>D:\the_spacebar\var\cache\dev/annotations.php</argument>
       <argument type="service" id="cache.annotations"/>
       <argument>#^Symfony\\(?:Component\\HttpKernel\\|Bundle\\FrameworkBundle\\Controller\\(?!AbstractController$|Controller$))#</argument>
       <argument>true</argument>
     </service>
     <service id="annotations.cache" class="Symfony\Component\Cache\DoctrineProvider" public="false">
-      <argument type="service" id=".2_PhpArrayAdapter~XkdELAP"/>
+      <argument type="service" id=".2_PhpArrayAdapter~GTpEjhK"/>
     </service>
     <service id="web_server.command.server_run" class="Symfony\Bundle\WebServerBundle\Command\ServerRunCommand" public="false">
       <tag name="console.command" command="server:run"/>
-      <argument>D:\GitHub\My-work\Symfony\the_spacebar/public</argument>
+      <argument>D:\the_spacebar/public</argument>
       <argument>dev</argument>
       <call method="setName">
         <argument>server:run</argument>
@@ -1228,7 +1288,7 @@
     </service>
     <service id="web_server.command.server_start" class="Symfony\Bundle\WebServerBundle\Command\ServerStartCommand" public="false">
       <tag name="console.command" command="server:start"/>
-      <argument>D:\GitHub\My-work\Symfony\the_spacebar/public</argument>
+      <argument>D:\the_spacebar/public</argument>
       <argument>dev</argument>
       <call method="setName">
         <argument>server:start</argument>
@@ -1310,7 +1370,7 @@
       <argument type="service" id="twig.loader.native_filesystem"/>
       <argument type="collection">
         <argument key="paths" type="collection">
-          <argument key="D:\GitHub\My-work\Symfony\the_spacebar/templates">null</argument>
+          <argument key="D:\the_spacebar/templates">null</argument>
         </argument>
         <argument key="debug">true</argument>
         <argument key="strict_variables">true</argument>
@@ -1319,9 +1379,9 @@
           <argument>form_div_layout.html.twig</argument>
         </argument>
         <argument key="autoescape">name</argument>
-        <argument key="cache">D:\GitHub\My-work\Symfony\the_spacebar\var\cache\dev/twig</argument>
+        <argument key="cache">D:\the_spacebar\var\cache\dev/twig</argument>
         <argument key="charset">UTF-8</argument>
-        <argument key="default_path">D:\GitHub\My-work\Symfony\the_spacebar/templates</argument>
+        <argument key="default_path">D:\the_spacebar/templates</argument>
         <argument key="date" type="collection">
           <argument key="format">F j, Y H:i</argument>
           <argument key="interval_format">%d days</argument>
@@ -1369,6 +1429,9 @@
       <call method="addExtension">
         <argument type="service" id="twig.extension.exercise.twig"/>
       </call>
+      <call method="addExtension">
+        <argument type="service" id="httplug.collector.twig.http_message"/>
+      </call>
       <call method="addGlobal">
         <argument>app</argument>
         <argument type="service" id="twig.app_variable"/>
@@ -1395,14 +1458,14 @@
       <argument type="service" id=".service_locator.UEpceA5.twig.cache_warmer"/>
       <argument>null</argument>
       <argument type="collection">
-        <argument key="D:\GitHub\My-work\Symfony\the_spacebar/templates">null</argument>
+        <argument key="D:\the_spacebar/templates">null</argument>
       </argument>
     </service>
     <service id="twig.template_iterator" class="Symfony\Bundle\TwigBundle\TemplateIterator" public="false">
       <argument type="service" id="kernel"/>
-      <argument>D:\GitHub\My-work\Symfony\the_spacebar\src</argument>
+      <argument>D:\the_spacebar\src</argument>
       <argument type="collection">
-        <argument key="D:\GitHub\My-work\Symfony\the_spacebar/templates">null</argument>
+        <argument key="D:\the_spacebar/templates">null</argument>
       </argument>
     </service>
     <service id="twig.template_cache_warmer" class="Symfony\Bundle\TwigBundle\CacheWarmer\TemplateCacheWarmer" public="false">
@@ -1414,44 +1477,52 @@
     <service id="twig.loader.native_filesystem" class="Twig\Loader\FilesystemLoader" public="false">
       <tag name="twig.loader"/>
       <argument type="collection"/>
-      <argument>D:\GitHub\My-work\Symfony\the_spacebar</argument>
+      <argument>D:\the_spacebar</argument>
       <call method="addPath">
-        <argument>D:\GitHub\My-work\Symfony\the_spacebar/templates</argument>
+        <argument>D:\the_spacebar/templates</argument>
       </call>
       <call method="addPath">
-        <argument>D:\GitHub\My-work\Symfony\the_spacebar\vendor\symfony\framework-bundle/Resources/views</argument>
+        <argument>D:\the_spacebar\vendor\symfony\framework-bundle/Resources/views</argument>
         <argument>Framework</argument>
       </call>
       <call method="addPath">
-        <argument>D:\GitHub\My-work\Symfony\the_spacebar\vendor\symfony\framework-bundle/Resources/views</argument>
+        <argument>D:\the_spacebar\vendor\symfony\framework-bundle/Resources/views</argument>
         <argument>!Framework</argument>
       </call>
       <call method="addPath">
-        <argument>D:\GitHub\My-work\Symfony\the_spacebar\vendor\symfony\twig-bundle/Resources/views</argument>
+        <argument>D:\the_spacebar\vendor\symfony\twig-bundle/Resources/views</argument>
         <argument>Twig</argument>
       </call>
       <call method="addPath">
-        <argument>D:\GitHub\My-work\Symfony\the_spacebar\vendor\symfony\twig-bundle/Resources/views</argument>
+        <argument>D:\the_spacebar\vendor\symfony\twig-bundle/Resources/views</argument>
         <argument>!Twig</argument>
       </call>
       <call method="addPath">
-        <argument>D:\GitHub\My-work\Symfony\the_spacebar\vendor\symfony\web-profiler-bundle/Resources/views</argument>
+        <argument>D:\the_spacebar\vendor\symfony\web-profiler-bundle/Resources/views</argument>
         <argument>WebProfiler</argument>
       </call>
       <call method="addPath">
-        <argument>D:\GitHub\My-work\Symfony\the_spacebar\vendor\symfony\web-profiler-bundle/Resources/views</argument>
+        <argument>D:\the_spacebar\vendor\symfony\web-profiler-bundle/Resources/views</argument>
         <argument>!WebProfiler</argument>
       </call>
       <call method="addPath">
-        <argument>D:\GitHub\My-work\Symfony\the_spacebar\vendor\symfony\debug-bundle/Resources/views</argument>
+        <argument>D:\the_spacebar\vendor\symfony\debug-bundle/Resources/views</argument>
         <argument>Debug</argument>
       </call>
       <call method="addPath">
-        <argument>D:\GitHub\My-work\Symfony\the_spacebar\vendor\symfony\debug-bundle/Resources/views</argument>
+        <argument>D:\the_spacebar\vendor\symfony\debug-bundle/Resources/views</argument>
         <argument>!Debug</argument>
       </call>
       <call method="addPath">
-        <argument>D:\GitHub\My-work\Symfony\the_spacebar/templates</argument>
+        <argument>D:\the_spacebar\vendor\php-http\httplug-bundle/Resources/views</argument>
+        <argument>Httplug</argument>
+      </call>
+      <call method="addPath">
+        <argument>D:\the_spacebar\vendor\php-http\httplug-bundle/Resources/views</argument>
+        <argument>!Httplug</argument>
+      </call>
+      <call method="addPath">
+        <argument>D:\the_spacebar/templates</argument>
       </call>
     </service>
     <service id="twig.loader.chain" class="Twig\Loader\ChainLoader" public="false"/>
@@ -1477,7 +1548,7 @@
     <service id="twig.extension.code" class="Symfony\Bridge\Twig\Extension\CodeExtension" public="false">
       <tag name="twig.extension"/>
       <argument type="service" id="debug.file_link_formatter" on-invalid="ignore"/>
-      <argument>D:\GitHub\My-work\Symfony\the_spacebar\src</argument>
+      <argument>D:\the_spacebar\src</argument>
       <argument>UTF-8</argument>
     </service>
     <service id="twig.extension.routing" class="Symfony\Bridge\Twig\Extension\RoutingExtension" public="false">
@@ -1537,7 +1608,7 @@
     <service id="twig.command.debug" class="Symfony\Bridge\Twig\Command\DebugCommand" public="false">
       <tag name="console.command" command="debug:twig"/>
       <argument type="service" id="twig"/>
-      <argument>D:\GitHub\My-work\Symfony\the_spacebar</argument>
+      <argument>D:\the_spacebar</argument>
       <call method="setName">
         <argument>debug:twig</argument>
       </call>
@@ -1549,7 +1620,7 @@
         <argument>lint:twig</argument>
       </call>
     </service>
-    <service id=".2_HtmlDumper~RtUEtaw" class="Symfony\Component\VarDumper\Dumper\HtmlDumper" public="false">
+    <service id=".2_HtmlDumper~rW6L_Xl" class="Symfony\Component\VarDumper\Dumper\HtmlDumper" public="false">
       <argument>null</argument>
       <argument>UTF-8</argument>
       <argument>1</argument>
@@ -1560,14 +1631,14 @@
         </argument>
       </call>
     </service>
-    <service id=".1_NonceGenerator~RtUEtaw" class="Symfony\Bundle\WebProfilerBundle\Csp\NonceGenerator" public="false"/>
+    <service id=".1_NonceGenerator~rW6L_Xl" class="Symfony\Bundle\WebProfilerBundle\Csp\NonceGenerator" public="false"/>
     <service id="web_profiler.controller.profiler" class="Symfony\Bundle\WebProfilerBundle\Controller\ProfilerController" public="true">
       <argument type="service" id="router.default" on-invalid="null"/>
       <argument type="service" id="profiler" on-invalid="null"/>
       <argument type="service" id="twig"/>
       <argument>%data_collector.templates%</argument>
       <argument type="service" id="web_profiler.csp.handler"/>
-      <argument>D:\GitHub\My-work\Symfony\the_spacebar</argument>
+      <argument>D:\the_spacebar</argument>
     </service>
     <service id="web_profiler.controller.router" class="Symfony\Bundle\WebProfilerBundle\Controller\RouterController" public="true">
       <argument type="service" id="profiler" on-invalid="null"/>
@@ -1581,11 +1652,11 @@
       <argument type="service" id="debug.file_link_formatter"/>
     </service>
     <service id="web_profiler.csp.handler" class="Symfony\Bundle\WebProfilerBundle\Csp\ContentSecurityPolicyHandler" public="false">
-      <argument type="service" id=".1_NonceGenerator~RtUEtaw"/>
+      <argument type="service" id=".1_NonceGenerator~rW6L_Xl"/>
     </service>
     <service id="twig.extension.webprofiler" class="Symfony\Bundle\WebProfilerBundle\Twig\WebProfilerExtension" public="false">
       <tag name="twig.extension"/>
-      <argument type="service" id=".2_HtmlDumper~RtUEtaw"/>
+      <argument type="service" id=".2_HtmlDumper~rW6L_Xl"/>
     </service>
     <service id="debug.file_link_formatter.url_format" class="string" public="false">
       <argument type="service" id="router.default"/>
@@ -1640,7 +1711,7 @@
     </service>
     <service id="monolog.processor.psr_log_message" class="Monolog\Processor\PsrLogMessageProcessor" public="false"/>
     <service id="monolog.handler.main" class="Monolog\Handler\StreamHandler">
-      <argument>D:\GitHub\My-work\Symfony\the_spacebar\var\log/dev.log</argument>
+      <argument>D:\the_spacebar\var\log/dev.log</argument>
       <argument>100</argument>
       <argument>true</argument>
       <argument>null</argument>
@@ -1649,7 +1720,7 @@
       </call>
     </service>
     <service id="monolog.handler.markdown_logging" class="Monolog\Handler\StreamHandler">
-      <argument>D:\GitHub\My-work\Symfony\the_spacebar\var\log/markdown.log</argument>
+      <argument>D:\the_spacebar\var\log/markdown.log</argument>
       <argument>100</argument>
       <argument>true</argument>
       <argument>null</argument>
@@ -1663,19 +1734,19 @@
       <argument>true</argument>
       <argument type="collection"/>
     </service>
-    <service id=".5_HtmlDescriptor~dkYlkvz" class="Symfony\Component\VarDumper\Command\Descriptor\HtmlDescriptor" public="false">
+    <service id=".5_HtmlDescriptor~CGR86qv" class="Symfony\Component\VarDumper\Command\Descriptor\HtmlDescriptor" public="false">
       <argument type="service" id="var_dumper.html_dumper"/>
     </service>
-    <service id=".4_CliDescriptor~dkYlkvz" class="Symfony\Component\VarDumper\Command\Descriptor\CliDescriptor" public="false">
+    <service id=".4_CliDescriptor~CGR86qv" class="Symfony\Component\VarDumper\Command\Descriptor\CliDescriptor" public="false">
       <argument type="service" id="var_dumper.cli_dumper"/>
     </service>
-    <service id=".3_CliContextProvider~dkYlkvz" class="Symfony\Component\VarDumper\Dumper\ContextProvider\CliContextProvider" public="false"/>
-    <service id=".2_RequestContextProvider~dkYlkvz" class="Symfony\Component\VarDumper\Dumper\ContextProvider\RequestContextProvider" public="false">
+    <service id=".3_CliContextProvider~CGR86qv" class="Symfony\Component\VarDumper\Dumper\ContextProvider\CliContextProvider" public="false"/>
+    <service id=".2_RequestContextProvider~CGR86qv" class="Symfony\Component\VarDumper\Dumper\ContextProvider\RequestContextProvider" public="false">
       <argument type="service" id="request_stack"/>
     </service>
-    <service id=".1_SourceContextProvider~dkYlkvz" class="Symfony\Component\VarDumper\Dumper\ContextProvider\SourceContextProvider" public="false">
+    <service id=".1_SourceContextProvider~CGR86qv" class="Symfony\Component\VarDumper\Dumper\ContextProvider\SourceContextProvider" public="false">
       <argument>UTF-8</argument>
-      <argument>D:\GitHub\My-work\Symfony\the_spacebar</argument>
+      <argument>D:\the_spacebar</argument>
       <argument type="service" id="debug.file_link_formatter" on-invalid="null"/>
     </service>
     <service id="twig.extension.dump" class="Symfony\Bridge\Twig\Extension\DumpExtension" public="false">
@@ -1726,9 +1797,9 @@
     <service id="var_dumper.server_connection" class="Symfony\Component\VarDumper\Server\Connection" public="false">
       <argument>tcp://%env(VAR_DUMPER_SERVER)%</argument>
       <argument type="collection">
-        <argument key="source" type="service" id=".1_SourceContextProvider~dkYlkvz"/>
-        <argument key="request" type="service" id=".2_RequestContextProvider~dkYlkvz"/>
-        <argument key="cli" type="service" id=".3_CliContextProvider~dkYlkvz"/>
+        <argument key="source" type="service" id=".1_SourceContextProvider~CGR86qv"/>
+        <argument key="request" type="service" id=".2_RequestContextProvider~CGR86qv"/>
+        <argument key="cli" type="service" id=".3_CliContextProvider~CGR86qv"/>
       </argument>
     </service>
     <service id="var_dumper.dump_server" class="Symfony\Component\VarDumper\Server\DumpServer" public="false">
@@ -1740,8 +1811,8 @@
       <tag name="console.command" command="server:dump"/>
       <argument type="service" id="var_dumper.dump_server"/>
       <argument type="collection">
-        <argument key="cli" type="service" id=".4_CliDescriptor~dkYlkvz"/>
-        <argument key="html" type="service" id=".5_HtmlDescriptor~dkYlkvz"/>
+        <argument key="cli" type="service" id=".4_CliDescriptor~CGR86qv"/>
+        <argument key="html" type="service" id=".5_HtmlDescriptor~CGR86qv"/>
       </argument>
       <call method="setName">
         <argument>server:dump</argument>
@@ -1788,20 +1859,180 @@
       <tag name="twig.extension"/>
       <argument type="service" id="markdown.parser.parser_manager"/>
     </service>
+    <service id="httplug.strategy" class="Http\HttplugBundle\Discovery\ConfiguredClientsStrategy">
+      <tag name="kernel.event_subscriber"/>
+      <tag name="container.hot_path"/>
+      <argument type="service" id="httplug.collector.auto_discovered_client" on-invalid="null"/>
+      <argument>null</argument>
+    </service>
+    <service id="httplug.message_factory.default" class="Http\Message\MessageFactory">
+      <factory class="Http\Discovery\MessageFactoryDiscovery" method="find"/>
+    </service>
+    <service id="httplug.stream_factory.default" class="Http\Message\StreamFactory">
+      <factory class="Http\Discovery\StreamFactoryDiscovery" method="find"/>
+    </service>
+    <service id="httplug.uri_factory.default" class="Http\Message\UriFactory">
+      <factory class="Http\Discovery\UriFactoryDiscovery" method="find"/>
+    </service>
+    <service id="httplug.async_client.default" class="Http\Client\HttpAsyncClient">
+      <factory class="Http\Discovery\HttpAsyncClientDiscovery" method="find"/>
+    </service>
+    <service id="Http\Client\Common\PluginClientFactory" class="Http\HttplugBundle\Collector\PluginClientFactory" public="false">
+      <argument type="service" id="httplug.collector.collector"/>
+      <argument type="service" id="httplug.collector.formatter"/>
+      <argument type="service" id="debug.stopwatch"/>
+    </service>
+    <service id="httplug.plugin.cache" class="Http\Client\Common\Plugin\CachePlugin" public="false">
+      <argument></argument>
+      <argument></argument>
+      <argument></argument>
+    </service>
+    <service id="httplug.plugin.content_length" class="Http\Client\Common\Plugin\ContentLengthPlugin" public="false"/>
+    <service id="httplug.plugin.cookie" class="Http\Client\Common\Plugin\CookiePlugin" public="false">
+      <argument></argument>
+    </service>
+    <service id="httplug.plugin.decoder" class="Http\Client\Common\Plugin\DecoderPlugin" public="false">
+      <argument type="collection">
+        <argument key="use_content_encoding">true</argument>
+      </argument>
+    </service>
+    <service id="httplug.plugin.error" class="Http\Client\Common\Plugin\ErrorPlugin" public="false"/>
+    <service id="httplug.plugin.history" class="Http\Client\Common\Plugin\HistoryPlugin" public="false">
+      <argument></argument>
+    </service>
+    <service id="httplug.plugin.logger" class="Http\Client\Common\Plugin\LoggerPlugin" public="false">
+      <argument type="service" id="monolog.logger"/>
+      <argument>null</argument>
+    </service>
+    <service id="httplug.plugin.redirect" class="Http\Client\Common\Plugin\RedirectPlugin" public="false">
+      <argument type="collection">
+        <argument key="preserve_header">true</argument>
+        <argument key="use_default_for_multiple">true</argument>
+      </argument>
+    </service>
+    <service id="httplug.plugin.retry" class="Http\Client\Common\Plugin\RetryPlugin" public="false">
+      <argument type="collection">
+        <argument key="retries">1</argument>
+      </argument>
+    </service>
+    <service id="httplug.plugin.stopwatch" class="Http\Client\Common\Plugin\StopwatchPlugin" public="false">
+      <argument type="service" id="debug.stopwatch"/>
+    </service>
+    <service id="httplug.plugin.add_host" class="Http\Client\Common\Plugin\AddHostPlugin" public="false" abstract="true">
+      <argument></argument>
+      <argument></argument>
+    </service>
+    <service id="httplug.plugin.add_path" class="Http\Client\Common\Plugin\AddPathPlugin" public="false" abstract="true">
+      <argument></argument>
+    </service>
+    <service id="httplug.plugin.base_uri" class="Http\Client\Common\Plugin\BaseUriPlugin" public="false" abstract="true">
+      <argument></argument>
+      <argument></argument>
+    </service>
+    <service id="httplug.plugin.header_append" class="Http\Client\Common\Plugin\HeaderAppendPlugin" public="false" abstract="true">
+      <argument></argument>
+    </service>
+    <service id="httplug.plugin.header_defaults" class="Http\Client\Common\Plugin\HeaderDefaultsPlugin" public="false" abstract="true">
+      <argument></argument>
+    </service>
+    <service id="httplug.plugin.header_set" class="Http\Client\Common\Plugin\HeaderSetPlugin" public="false" abstract="true">
+      <argument></argument>
+    </service>
+    <service id="httplug.plugin.header_remove" class="Http\Client\Common\Plugin\HeaderRemovePlugin" public="false" abstract="true">
+      <argument></argument>
+    </service>
+    <service id=".1_CurlCommandFormatter~JQmaav3" class="Http\Message\Formatter\CurlCommandFormatter" public="false"/>
+    <service id="httplug.formatter.full_http_message" class="Http\Message\Formatter\FullHttpMessageFormatter" public="false">
+      <argument>0</argument>
+    </service>
+    <service id="httplug.collector.formatter" class="Http\HttplugBundle\Collector\Formatter" public="false">
+      <argument type="service" id="httplug.formatter.full_http_message"/>
+      <argument type="service" id=".1_CurlCommandFormatter~JQmaav3"/>
+    </service>
+    <service id="httplug.collector.collector" class="Http\HttplugBundle\Collector\Collector" public="false">
+      <tag name="data_collector" template="@Httplug/webprofiler.html.twig" priority="200" id="httplug"/>
+    </service>
+    <service id="httplug.plugin.stack" class="Http\HttplugBundle\Collector\StackPlugin" public="false" abstract="true">
+      <argument type="service" id="httplug.collector.collector"/>
+      <argument type="service" id="httplug.collector.formatter"/>
+    </service>
+    <service id="httplug.collector.twig.http_message" class="Http\HttplugBundle\Collector\Twig\HttpMessageMarkupExtension" public="false">
+      <tag name="twig.extension"/>
+    </service>
+    <service id="httplug.collector.auto_discovered_client" class="Http\HttplugBundle\Collector\ProfileClient" public="false">
+      <argument type="service" id="httplug.collector.auto_discovered_client.inner"/>
+      <argument type="service" id="httplug.collector.collector"/>
+      <argument type="service" id="httplug.collector.formatter"/>
+      <argument type="service" id="debug.stopwatch"/>
+    </service>
+    <service id="httplug.collector.factory.auto" class="Http\HttplugBundle\Collector\ProfileClientFactory" public="false">
+      <argument type="service" id="httplug.collector.factory.auto.inner"/>
+      <argument type="service" id="httplug.collector.collector"/>
+      <argument type="service" id="httplug.collector.formatter"/>
+      <argument type="service" id="debug.stopwatch"/>
+    </service>
+    <service id="httplug.collector.factory.buzz" class="Http\HttplugBundle\Collector\ProfileClientFactory" public="false">
+      <argument type="service" id="httplug.collector.factory.buzz.inner"/>
+      <argument type="service" id="httplug.collector.collector"/>
+      <argument type="service" id="httplug.collector.formatter"/>
+      <argument type="service" id="debug.stopwatch"/>
+    </service>
+    <service id="httplug.collector.factory.curl" class="Http\HttplugBundle\Collector\ProfileClientFactory" public="false">
+      <argument type="service" id="httplug.collector.factory.curl.inner"/>
+      <argument type="service" id="httplug.collector.collector"/>
+      <argument type="service" id="httplug.collector.formatter"/>
+      <argument type="service" id="debug.stopwatch"/>
+    </service>
+    <service id="httplug.collector.factory.guzzle5" class="Http\HttplugBundle\Collector\ProfileClientFactory" public="false">
+      <argument type="service" id="httplug.collector.factory.guzzle5.inner"/>
+      <argument type="service" id="httplug.collector.collector"/>
+      <argument type="service" id="httplug.collector.formatter"/>
+      <argument type="service" id="debug.stopwatch"/>
+    </service>
+    <service id="httplug.collector.factory.guzzle6" class="Http\HttplugBundle\Collector\ProfileClientFactory" public="false">
+      <argument type="service" id="httplug.collector.factory.guzzle6.inner"/>
+      <argument type="service" id="httplug.collector.collector"/>
+      <argument type="service" id="httplug.collector.formatter"/>
+      <argument type="service" id="debug.stopwatch"/>
+    </service>
+    <service id="httplug.collector.factory.react" class="Http\HttplugBundle\Collector\ProfileClientFactory" public="false">
+      <argument type="service" id="httplug.collector.factory.react.inner"/>
+      <argument type="service" id="httplug.collector.collector"/>
+      <argument type="service" id="httplug.collector.formatter"/>
+      <argument type="service" id="debug.stopwatch"/>
+    </service>
+    <service id="httplug.collector.factory.socket" class="Http\HttplugBundle\Collector\ProfileClientFactory" public="false">
+      <argument type="service" id="httplug.collector.factory.socket.inner"/>
+      <argument type="service" id="httplug.collector.collector"/>
+      <argument type="service" id="httplug.collector.formatter"/>
+      <argument type="service" id="debug.stopwatch"/>
+    </service>
+    <service id="Http\HttplugBundle\Collector\PluginClientFactoryListener" class="Http\HttplugBundle\Collector\PluginClientFactoryListener">
+      <tag name="kernel.event_subscriber"/>
+      <tag name="container.hot_path"/>
+      <argument type="service" id="Http\Client\Common\PluginClientFactory"/>
+    </service>
+    <service id="httplug.client.app.client" class="Http\Client\HttpClient" public="false">
+      <argument type="collection"/>
+      <factory service="httplug.collector.factory.auto" method="createClient"/>
+    </service>
+    <service id="httplug.client.app.http_methods" class="Http\Client\Common\HttpMethodsClient" public="false">
+      <argument type="service" id="httplug.client.app.http_methods.inner"/>
+      <argument type="service" id="httplug.message_factory.default"/>
+    </service>
+    <service id="nexy_slack.client" class="Nexy\Slack\Client" public="true">
+      <argument>%env(string:SLACK_WEBHOOK_ENDPOINT)%</argument>
+      <argument>%nexy_slack.config%</argument>
+      <argument type="service" id="httplug.client.app.http_methods"/>
+    </service>
     <service id=".instanceof.Symfony\Component\DependencyInjection\ServiceSubscriberInterface.0.App\Controller\ArticleController" class="App\Controller\ArticleController" public="false" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\ArticleController" class="App\Controller\ArticleController" public="false" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\ArticleController" class="App\Controller\ArticleController" public="false" autowire="true" autoconfigure="true" abstract="true"/>
-    <service id=".value.C_5.39h" class="mixed">
-      <argument type="collection">
-        <argument>true</argument>
-      </argument>
-      <factory function="current"/>
-    </service>
-    <service id=".service_locator.MT1r.sI" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.rAs6Sew" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
-        <argument key="isDebug" type="service" id=".value.C_5.39h"/>
         <argument key="markdownHelper" type="service" id="App\Service\MarkdownHelper"/>
+        <argument key="slack" type="service" id="App\Service\SlackClient"/>
       </argument>
     </service>
     <service id=".service_locator.dOJ.0GD" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
@@ -1810,12 +2041,12 @@
         <argument key="logger" type="service" id="monolog.logger"/>
       </argument>
     </service>
-    <service id=".service_locator.Y48h4NW" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.d_BI_WM" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
-        <argument key="App\Controller\ArticleController::show" type="service" id=".service_locator.MT1r.sI"/>
+        <argument key="App\Controller\ArticleController::show" type="service" id=".service_locator.rAs6Sew"/>
         <argument key="App\Controller\ArticleController::toggleArticleHeart" type="service" id=".service_locator.dOJ.0GD"/>
-        <argument key="App\Controller\ArticleController:show" type="service" id=".service_locator.MT1r.sI"/>
+        <argument key="App\Controller\ArticleController:show" type="service" id=".service_locator.rAs6Sew"/>
         <argument key="App\Controller\ArticleController:toggleArticleHeart" type="service" id=".service_locator.dOJ.0GD"/>
       </argument>
     </service>
@@ -1978,11 +2209,43 @@
         <argument type="service" id="debug.argument_resolver.variadic"/>
       </argument>
     </service>
+    <service id="httplug.collector.auto_discovered_client.inner" class="Http\Client\HttpClient" public="false">
+      <factory class="Http\Discovery\HttpClientDiscovery" method="find"/>
+    </service>
+    <service id="httplug.collector.factory.auto.inner" class="Http\HttplugBundle\ClientFactory\AutoDiscoveryFactory" public="false"/>
+    <service id="httplug.collector.factory.buzz.inner" class="Http\HttplugBundle\ClientFactory\BuzzFactory" public="false">
+      <argument type="service" id="httplug.message_factory.default"/>
+    </service>
+    <service id="httplug.collector.factory.curl.inner" class="Http\HttplugBundle\ClientFactory\CurlFactory" public="false">
+      <argument type="service" id="httplug.message_factory.default"/>
+      <argument type="service" id="httplug.stream_factory.default"/>
+    </service>
+    <service id="httplug.collector.factory.guzzle5.inner" class="Http\HttplugBundle\ClientFactory\Guzzle5Factory" public="false">
+      <argument type="service" id="httplug.message_factory.default"/>
+    </service>
+    <service id="httplug.collector.factory.guzzle6.inner" class="Http\HttplugBundle\ClientFactory\Guzzle6Factory" public="false"/>
+    <service id="httplug.collector.factory.react.inner" class="Http\HttplugBundle\ClientFactory\ReactFactory" public="false">
+      <argument type="service" id="httplug.message_factory.default"/>
+    </service>
+    <service id="httplug.collector.factory.socket.inner" class="Http\HttplugBundle\ClientFactory\SocketFactory" public="false">
+      <argument type="service" id="httplug.message_factory.default"/>
+    </service>
+    <service id="httplug.client.app.http_methods.inner" class="Http\Client\Common\PluginClient" public="false">
+      <argument type="service" id="httplug.client.app.client"/>
+      <argument type="collection">
+        <argument type="service" id="httplug.plugin.content_length"/>
+        <argument type="service" id="httplug.plugin.redirect"/>
+      </argument>
+      <argument type="collection">
+        <argument key="client_name">app</argument>
+      </argument>
+      <factory service="Http\Client\Common\PluginClientFactory" method="createClient"/>
+    </service>
     <service id="debug.argument_resolver.request_attribute.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\RequestAttributeValueResolver" public="false"/>
     <service id="debug.argument_resolver.request.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\RequestValueResolver" public="false"/>
     <service id="debug.argument_resolver.session.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\SessionValueResolver" public="false"/>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver" public="false">
-      <argument type="service" id=".service_locator.Y48h4NW"/>
+      <argument type="service" id=".service_locator.d_BI_WM"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver" public="false"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver" public="false"/>
@@ -2099,42 +2362,42 @@
       </argument>
     </service>
     <service id="cache.app.recorder_inner" class="Symfony\Component\Cache\Adapter\FilesystemAdapter" public="false">
-      <argument>+P+0Y8xo9q</argument>
+      <argument>xu0QaQQq1V</argument>
       <argument>0</argument>
-      <argument>D:\GitHub\My-work\Symfony\the_spacebar\var\cache\dev/pools</argument>
+      <argument>D:\the_spacebar\var\cache\dev/pools</argument>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       </call>
     </service>
     <service id="cache.system.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
-      <argument>iu1lldyKSY</argument>
+      <argument>9CtEJFCA7Y</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>D:\GitHub\My-work\Symfony\the_spacebar\var\cache\dev/pools</argument>
+      <argument>D:\the_spacebar\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.validator.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
-      <argument>ALlRHM70n2</argument>
+      <argument>v4tcAzaQ3b</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>D:\GitHub\My-work\Symfony\the_spacebar\var\cache\dev/pools</argument>
+      <argument>D:\the_spacebar\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.serializer.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
-      <argument>mIaEbyOUHq</argument>
+      <argument>ck06MdipM1</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>D:\GitHub\My-work\Symfony\the_spacebar\var\cache\dev/pools</argument>
+      <argument>D:\the_spacebar\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.annotations.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
-      <argument>e8k-ILz4d2</argument>
+      <argument>Zp26DAJFvE</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>D:\GitHub\My-work\Symfony\the_spacebar\var\cache\dev/pools</argument>
+      <argument>D:\the_spacebar\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -2146,6 +2409,7 @@
     </service>
     <service id="Psr\Container\ContainerInterface" alias="service_container" public="false"/>
     <service id="Symfony\Component\DependencyInjection\ContainerInterface" alias="service_container" public="false"/>
+    <service id="Nexy\Slack\Client" alias="nexy_slack.client" public="false"/>
     <service id="Symfony\Component\DependencyInjection\ParameterBag\ContainerBagInterface" alias="parameter_bag" public="false"/>
     <service id="Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface" alias="parameter_bag" public="false"/>
     <service id="Symfony\Component\EventDispatcher\EventDispatcherInterface" alias="debug.event_dispatcher" public="false"/>
@@ -2184,13 +2448,35 @@
     <service id="markdown.parser" alias="markdown.parser.light" public="true"/>
     <service id="Knp\Bundle\MarkdownBundle\MarkdownParserInterface" alias="markdown.parser.light"/>
     <service id="Michelf\MarkdownInterface" alias="markdown.parser.light"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.Y48h4NW"/>
+    <service id="Http\Message\MessageFactory" alias="httplug.message_factory.default" public="false"/>
+    <service id="Http\Message\RequestFactory" alias="httplug.message_factory.default" public="false"/>
+    <service id="Http\Message\ResponseFactory" alias="httplug.message_factory.default" public="false"/>
+    <service id="Http\Message\StreamFactory" alias="httplug.stream_factory.default" public="false"/>
+    <service id="Http\Message\UriFactory" alias="httplug.uri_factory.default" public="false"/>
+    <service id="Http\Client\HttpAsyncClient" alias="httplug.async_client.default" public="false"/>
+    <service id="Http\Client\HttpClient" alias="httplug.client.app.http_methods" public="false"/>
+    <service id="httplug.client" alias="httplug.client.app.http_methods" public="true"/>
+    <service id="httplug.message_factory" alias="httplug.message_factory.default" public="true"/>
+    <service id="httplug.uri_factory" alias="httplug.uri_factory.default" public="true"/>
+    <service id="httplug.stream_factory" alias="httplug.stream_factory.default" public="true"/>
+    <service id="httplug.client.default" alias="httplug.client.app.http_methods"/>
+    <service id="nexy_slack.http.client" alias="httplug.client.app.http_methods" public="false"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.d_BI_WM"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem" public="false"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
-    <service id=".service_locator.AoifO_3" alias=".2_ServiceLocator~_7zcZ0I" public="false"/>
+    <service id=".service_locator.AoifO_3" alias=".2_ServiceLocator~lrcyybC" public="false"/>
     <service id="event_dispatcher" alias="debug.event_dispatcher" public="true"/>
     <service id="controller_resolver" alias="debug.controller_resolver" public="false"/>
     <service id="argument_resolver" alias="debug.argument_resolver" public="false"/>
+    <service id="httplug.auto_discovery.auto_discovered_client" alias="httplug.collector.auto_discovered_client"/>
+    <service id="httplug.factory.auto" alias="httplug.collector.factory.auto" public="false"/>
+    <service id="httplug.factory.buzz" alias="httplug.collector.factory.buzz" public="false"/>
+    <service id="httplug.factory.curl" alias="httplug.collector.factory.curl" public="false"/>
+    <service id="httplug.factory.guzzle5" alias="httplug.collector.factory.guzzle5" public="false"/>
+    <service id="httplug.factory.guzzle6" alias="httplug.collector.factory.guzzle6" public="false"/>
+    <service id="httplug.factory.react" alias="httplug.collector.factory.react" public="false"/>
+    <service id="httplug.factory.socket" alias="httplug.collector.factory.socket" public="false"/>
+    <service id="httplug.client.app" alias="httplug.client.app.http_methods"/>
     <service id="argument_resolver.request_attribute" alias="debug.argument_resolver.request_attribute" public="false"/>
     <service id="argument_resolver.request" alias="debug.argument_resolver.request" public="false"/>
     <service id="argument_resolver.session" alias="debug.argument_resolver.session" public="false"/>
