@@ -35,3 +35,5 @@ ecd1d8,127.0.0.1,GET,http://localhost:8000/news/khaaaaaan,1536126240,,500
 705905,127.0.0.1,GET,http://localhost:8000/,1536126423,,200
 8979f1,127.0.0.1,GET,http://localhost:8000/news/jalapeno,1536126426,,200
 6050f7,127.0.0.1,GET,http://localhost:8000/news/khaaaaaan,1536126434,,200
+30aac3,127.0.0.1,GET,http://localhost:8000/news/khaaaaaan,1536133788,,200
+a2bdb7,127.0.0.1,POST,http://localhost:8000/news/khaaaaaan/heart,1536133990,,200
