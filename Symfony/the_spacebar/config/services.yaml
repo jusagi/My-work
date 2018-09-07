@@ -4,6 +4,7 @@
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
+    locale: 'en'
 
 services:
     # custom aliases for autowiring
@@ -32,3 +33,31 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    admin.category:
+        class: App\Admin\CategoryAdmin
+        arguments: [~, App\Entity\Category, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Category }
+        public: true
+
+    admin.blog_post:
+        class: App\Admin\BlogPostAdmin
+        arguments: [~, App\Entity\BlogPost, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Blog post }
+        public: true
+
+    admin.classroom:
+        class: App\Admin\ClassroomAdmin
+        arguments: [~, App\Entity\Classroom, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Classroom }
+        public: true
+
+    admin.student:
+        class: App\Admin\StudentAdmin
+        arguments: [~, App\Entity\Student, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Student }
+        public: true
