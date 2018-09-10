@@ -1,0 +1,40 @@
+{
+    "name": "nexylan/slack-bundle",
+    "description": "Symfony bundle integration of maknz/slack library",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sullivan SENECHAL",
+            "email": "soullivaneuh@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "nexylan/slack": "^2.0",
+        "php-http/httplug-bundle": "^1.8",
+        "symfony/http-kernel": "^3.4 || ^4.0"
+    },
+    "require-dev": {
+        "matthiasnoback/symfony-dependency-injection-test": "^2.3",
+        "php-http/mock-client": "^1.1",
+        "phpunit/phpunit": "^6.5"
+    },
+    "suggest": {
+        "eightpoints/guzzle-bundle": "Make a custom Guzzle instance for Slack with ease"
+    },
+    "autoload": {
+        "psr-4": { "Nexy\\SlackBundle\\": "src" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Nexy\\SlackBundle\\Tests\\": "tests" }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.x-dev"
+        }
+    }
+}
